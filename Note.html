@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Note</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #eec4c0 52%;
+        }
+
+        #note-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #note-textarea {
+            width: 80%;
+            min-height: 600px;
+            padding: 0px;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+        #submit-btn {
+            padding: 10px;
+            cursor: pointer;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank You for Leaving a Comment</h1>
+
+    <div id="note-container">
+        <textarea id="note-textarea" placeholder="Write your note/review here..."></textarea>
+        <button id="submit-btn" onclick="submitNote()">Submit</button>
+    </div>
+
+    <script>
+        function submitNote() {
+            var noteTextarea = document.getElementById("note-textarea");
+            var note = noteTextarea.value.trim();
+
+            if (note !== "") {
+                alert("Note submitted:\n\n" + note);
+                // Here you can add code to send the note to a server or save it elsewhere.
+                // For simplicity, this example shows an alert with the submitted note.
+            } else {
+                alert("Please write a note before submitting.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: beige;
+      background-size: 20px 20px;
+    }
+
+    nav {
+      background-color: #3498db; /* Blue background color */
+      color: #fff; /* Text color */
+      padding: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .heading h4 {
+      margin: 0;
+    }
+
+    .form-container {
+      width: 30%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 75px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+    }
+  </style>
+
+  <meta charset="UTF-8">
+  <title>Membership Registration</title>
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="heading">
+      <h4>MEMBERSHIP REGISTRATION</h4>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="Untitled-1.html">Home</a></li>
+    </ul>
+  </nav>
+
+  
+  <!-- Membership Registration Form -->
+  <div class="form-container">
+    <form action="#" method="post"> <!-- Set the action attribute to the URL where you want to submit the form data -->
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required>
+      <small>Format: 1234567890</small>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" onchange="updateStateDropdown()" required>
+        <option value="" disabled selected>Select Country</option>
+        <option value="USA">United States</option>
+        <option value="Canada">Canada</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Brazil">Brazil</option>
+        <option value="NewZealand">New Zealand</option>
+      </select>
+
+      <label for="state">State:</label>
+      <select id="state" name="state" required>
+        <option value="" disabled selected>Select State</option>
+        <!-- States will be dynamically populated based on the selected country -->
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <span>Follow us on:</span>
+      <a href="https://www.facebook.com/robinson.dianaabasi" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook"></a>
+    </div>
+  </footer>
+
+  <script>
+    function updateStateDropdown() {
+      const countrySelect = document.getElementById('country');
+      const stateSelect = document.getElementById('state');
+
+      // Clear existing options
+      stateSelect.innerHTML = '<option value="" disabled selected>Select State</option>';
+
+      // Sample states for selected countries
+      const statesByCountry = {
+        'USA': ['California', 'New York', 'Texas', 'Florida', 'Illinois', 'Pennsylvania', 'Ohio', 'Georgia', 'North Carolina', 'Michigan'],
+        'Canada': ['Ontario', 'Quebec', 'British Columbia', 'Alberta', 'Manitoba', 'Saskatchewan', 'Nova Scotia', 'New Brunswick', 'Newfoundland and Labrador', 'Prince Edward Island'],
+        'Nigeria': [
+          'Lagos', 'Kano', 'Oyo', 'Rivers', 'Kaduna', 'Delta', 'Ogun', 'Abia', 'Enugu', 'Ondo', 'Anambra', 'Edo', 'Benue', 'Akwa Ibom', 'Kogi', 'Osun', 'Cross River', 'Abuja (FCT)', 'Ekiti', 'Niger', 'Plateau', 'Taraba', 'Adamawa', 'Imo', 'Jigawa', 'Sokoto', 'Bayelsa', 'Ebonyi', 'Gombe', 'Yobe', 'Kebbi', 'Zamfara'
+        ],
+        'Ghana': [
+          'Greater Accra', 'Ashanti', 'Brong-Ahafo', 'Central', 'Eastern', 'Northern', 'Volta', 'Western', 'Upper East', 'Upper West'
+        ],
+        'Brazil': [
+          'São Paulo', 'Rio de Janeiro', 'Brasília', 'Salvador', 'Fortaleza', 'Belo Horizonte', 'Manaus', 'Curitiba', 'Recife', 'Porto Alegre', 'Belém', 'Goiânia', 'Campinas', 'São Luís', 'São Gonçalo', 'Maceió', 'Duque de Caxias', 'Campo Grande', 'Natal'
+        ],
+        'NewZealand': [
+          'Auckland', 'Wellington', 'Christchurch', 'Hamilton', 'Tauranga', 'Dunedin', 'Palmerston North', 'Napier-Hastings', 'Hamilton', 'Rotorua', 'Whangarei', 'New Plymouth', 'Invercargill', 'Nelson', 'Rotorua', 'Palmerston North', 'Hastings', 'Napier', 'Tauranga', 'Dunedin'
+        ],
+        // Add more states for other countries
+      };
+
+      const selectedCountry = countrySelect.value;
+      const states = statesByCountry[selectedCountry] || [];
+
+      // Add new options to the state dropdown
+      states.forEach(state => {
+        const option = document.createElement('option');
+        option.value = state;
+        option.textContent = state;
+        stateSelect.appendChild(option);
+      });
+    }
+  </script>
+
+</body>
+
+</html>

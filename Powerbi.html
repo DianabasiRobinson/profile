@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+     
+    }
+
+    nav {
+      background-color: #f6f6fb; /* Blue background color */
+      color: #800000; /* Text color */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #800000;
+    }
+
+    .heading h4 {
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 25px;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    .nav-links a {
+      color: #fff; /* Text color */
+      text-decoration: none;
+    }
+
+    #powerBiContainer {
+      width: 100%;
+      height: 90vh;
+    }
+
+    #controls {
+      padding: 20px;
+    }
+  
+       /* footer {
+            background-color: #800000; 
+            color: white;
+            padding: 0px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            margin-top: 10px;
+            font-weight: 500;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: medium;
+       }*/
+  </style>
+
+  <meta charset="UTF-8">
+  <title>Power BI Embedding</title>
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="heading">
+      <h4>FINANCE DASHBOARD</h4>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="Untitled-1.html">Home</a></li>
+    </ul>
+  </nav>
+<p></p>
+  <!-- Power BI Embed Code using iframe -->
+  <div id="powerBiContainer">
+    <iframe title="Power BI Report" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiMDE0YWQ0MGYtNmY4MC00MGQ1LWFmZWMtNmNhODRjYTI5ZTM1IiwidCI6IjNiNDIyZGExLWI4NmEtNGUwYS04M2IzLTlkYzg2MDYzOGYxYyIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
+  </div>
+
+  <div id="controls">
+    <!-- Additional controls can be added here if needed -->
+  </div>
+
+<!--<footer>
+   <p>&copy; 2023 robinsonfoundation.org. All rights reserved</p>
+</footer> -->
+
+</body>
+
+</html>
