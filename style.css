@@ -104,5 +104,11 @@
     
   }
     
-  
+  .plain-pain {
+    border: 1px solid red;
+    padding: 10px;
+    color: #0d0d9e;
+  }
    
+
+  

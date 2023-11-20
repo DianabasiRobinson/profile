@@ -29,7 +29,7 @@
 
     /* Header styles */
     header {
-      background-color: #800000; /* Ribbon color */
+      background-color: #0c0f3a; /* Ribbon color */
       color: white;
       padding: 0px;
       width: 100%;
@@ -39,7 +39,7 @@
       position: fixed;
       height: 55px;
       font-size: 14px;
-      border-bottom: 5px solid rgb(150, 100, 38);
+      border-bottom: 5px solid #0c0f3a ; /* rgb(150, 100, 38);*/
       top: 0;
       z-index: 1000;
      
@@ -77,7 +77,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #800000; /* Blue background for the dropdown */
+  background-color: #0c0f3a; /* Blue background for the dropdown */
   min-width: 136.5px;
   z-index: 1;
   border-radius: 10px; /* Rounded corners */
@@ -93,7 +93,7 @@
 }
 
 .nav-item:hover .dropdown-content {
-  display: flex;
+  display: block;
 }
 
 .dropdown-content a {
@@ -101,8 +101,9 @@
   padding: 10px 16px;
   text-decoration: none;
   display: block;
-  transform: translateX(0); /* Reset the horizontal translation */
-  list-style-type: none;
+  /*transform: translateX(0);  Reset the horizontal translation 
+  list-style-type: none;*/
+ 
 }
 
 .nav-item a {
@@ -127,6 +128,7 @@
   padding: 0; /* Remove default padding for the nested ul */
   margin: 0; /* Remove default margin for the nested ul */
   text-align: center;
+ 
 }
 
 
@@ -175,7 +177,7 @@
       margin-bottom: 5px; /* Add some spacing between the title and the paragraph */
       text-align: center; /* Center the title within the container */
       padding: 8px; /* Add padding to create space around the title */
-      color: black; /* Set text color to white for better visibility on colored backgrounds */
+      color: white; /* Set text color to white for better visibility on colored backgrounds */
       font-family: cursive;
     }
 
@@ -231,7 +233,7 @@
       width: 700px;
       background-color: #f0f0f0;
       padding: 20px;
-      border: 1px solid #4aa814;
+      border: 1px solid #5B2C6F;
       border-radius: 10px;
       /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
       margin-bottom: 20px;
@@ -242,8 +244,8 @@
     }
 
     .box-header {
-      background-color: #4aa814; /* Blue background for the header */
-      color: rgb(11, 11, 11);
+      background-color: #5B2C6F; /* Blue background for the header */
+      color: white;
       padding: 10px;
       font-weight: bolder;
       border-top-left-radius: 10px;
@@ -279,7 +281,7 @@
 .centralized-frame {
             margin: 20px auto;
             padding: 20px;
-            max-width: 650px;
+            max-width: 997px;
             align-content: center; 
             font-family: 'Segoe UI', Tahoma,  Verdana;         
             text-align: left;
@@ -302,7 +304,7 @@
             
         }
         .jumbotron {
-    background: linear-gradient(500deg, #FADBD8 50%, #E6B0AA 50%, #CD6155 50%, #F5B7B1 52%,  #E6B0AA 0);
+    background: linear-gradient(0deg, #0c0f3a 50%, rgb(150, 100, 38) 30%, rgb(150, 100, 38) 51%,  rgb(247, 248, 251) 0);
      height: 30px; 
      padding: 150PX;
      margin-top: 20px;
@@ -320,6 +322,7 @@
       font-weight: 70%;
       font-family: cursive;
       font-size: 1em;
+      
     }
    .jumbotron img {
             position: absolute;
@@ -349,16 +352,17 @@
             }
         }
         .main-title {
-      background-color: #800000; /* Set your desired blue background color */
+      background-color: #0c0f3a; /* Set your desired blue background color */
       text-align: center; /* Center the title within the container */
-      padding: 10px; /* Add padding to create space around the title */
+      padding: 4px; /* Add padding to create space around the title */
       color: #fff; /* Set text color to white for better visibility on colored backgrounds */
       font-size: 20px; /* Set your desired font size for the title */
-      margin-bottom: 20px;
+      margin-bottom: 0px;
+      margin-top: 10px;
     }
     .subtitles {
       text-align: center; /* Center the subtitles within the container */
-      margin-bottom: 20px; /* Add some space between the overall title and subtitles */
+      margin-bottom: 15px; /* Add some space between the overall title and subtitles */
       color: #fff; /* Set text color to white for better visibility on colored backgrounds */
       margin-top: 5px;
     }
@@ -369,7 +373,7 @@
       font-family: serif;
       background-color: #f3f3f6;
       border-radius: 10px;
-      overflow: hidden; /* Hides any overflowed content */
+      /* overflow: hidden; Hides any overflowed content */
     }     
   </style>
 </head>
@@ -439,7 +443,7 @@
       <li class="nav-item">
         <div class="dropdown">
           <a href="#" style="background-color: rgb(150, 100, 38); padding: 10px 20px;" >Donate Now &#9662;</a>
-          <div class="dropdown-content" style="background-color: rgb(150, 100, 38); border-bottom: 5px solid #800000">
+          <div class="dropdown-content" style="background-color: rgb(150, 100, 38); border-bottom: 5px solid #0c0f3a">
             <ul>
               <li><a href="#">USD</a></li>
               <li><a href="#">NGA</a></li>
@@ -456,13 +460,14 @@
  <!-- Page Header -->
  <div class="jumbotron">
      <img src="Images/diana.jpg" alt="Your Image">
-     <h2>  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;I’m Dianabasi Robinson, a Data and Reporting 
-      Analyst with a Passion for Solving Business Problems <br>through Data Insights. Dive into my Profile for a Snapshot
+     <h2>  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&#129309;&nbsp;I’m Dianabasi Robinson, a Data and Reporting 
+      Analyst with a Passion for Solving Business Problems <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;through Data Insights. Dive into my Profile for a Snapshot
        of my Skills and Experience....<span>&#9997;&#127998;</h2>
        <br> <h1 style="background-color: rgb(150, 100, 38); color: rgb(244, 239, 239);  border-top-right-radius: 
-       10px;border-top-left-radius: 10px; padding: 1%;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SQL &nbsp;&#8226; Python &nbsp;&#8226; Excel Power BI &nbsp;&#8226; ArcGIS &nbsp;&#8226; 
-          Tableau &nbsp;&#8226; Domo &nbsp;&#8226; Healthcare Analytics &nbsp;&#8226; Supply Chain &nbsp;&#8226; ETL &nbsp;&#8226; HTML/CSS &nbsp;&#8226;
-           Process Improvement   &nbsp;&#8226;&nbsp;MS Visio &nbsp;&#8226;&nbsp; Cust. Service  </h1>
+       10px;border-top-left-radius: 10px; padding: 1%;"> &nbsp;&nbsp;&nbsp;&nbsp; <span style='font-size:25px; '>&#129520;</span> 
+       SKILLS: &nbsp;SQL &nbsp;&#8226;Python &nbsp;&#8226;Excel &nbsp;&#8226;Power BI &nbsp;&#8226;ArcGIS &nbsp;&#8226;Tableau 
+       &nbsp;&#8226;Domo &nbsp;&#8226;Healthcare Analytics &nbsp;&#8226;Supply Chain &nbsp;&#8226;ETL &nbsp;&#8226;HTML/CSS 
+       &nbsp;&#8226;Process Improvement   &nbsp;&#8226;MS Visio &nbsp;&#8226;Cust. Service  </h1>
       </div>
       
      
@@ -503,18 +508,23 @@
 <div id="image-gallery" class="image-container">
   <img id="gallery-image" src="Images/Children.jpg" alt="Gallery Image" style="width: 70%; height: 300px; border-radius: 10px;">
 </div>
-
+<br>
 <br>
 <!-- Overall title -->
 <div class="main-title">
   <h1>PROFESSIONAL EXPERIENCE</h1>
   <div class="subtitle-container">
-    <p style="font-family: sans-serif; color: #800000; font-weight: 600; font-size: 15px; ">Centene Corporations | Data Analyst | 2023 - Present &nbsp;&nbsp;&#8226;&nbsp; 
-      United HealthGroup | Data Analyst | Nov 2022 - Aug 2023 &nbsp;&nbsp;&#8226;&nbsp;      
-      St. Agnes HealthCare Professionals | Data Analyst | July 2022 - Nov 2022 &nbsp;&nbsp;&#8226;&nbsp; 
-      Miden Systems | Data Analyst | October 2019 - May 2022
+    <p style="font-family: sans-serif; color: #0c0f3a; font-weight: 600; font-size: 15px; ">Centene Corporations | Dec 2023 - Present &nbsp;&nbsp;&#8226;&nbsp; 
+      United HealthGroup | Nov 2022 - Aug 2023 &nbsp;&nbsp;&#8226;&nbsp;      
+      St. Agnes HealthCare Professionals | July 2022 - Nov 2022 &nbsp;&nbsp;&#8226;&nbsp; 
+      Miden Systems | Oct 2019 - May 2022
     </p>
   </div>
+</div>
+
+<br>
+<div class="plain-pane">
+
 </div>
 
 <!-- Content -->
@@ -610,25 +620,22 @@
 </div>
 <br>
 <div class="main-title">
-  <h1>SKILLS</h1>
-  <div class="subtitle-container">
-    <p style="font-family: sans-serif; color: #800000; font-weight: 600; font-size: 15px; ">Centene Corporations | Data Analyst | 2023 - Present &nbsp;&nbsp;&#8226;&nbsp; 
-      United HealthGroup | Data Analyst | Nov 2022 - Aug 2023 &nbsp;&nbsp;&#8226;&nbsp;      
-      St. Agnes HealthCare Professionals | Data Analyst | July 2022 - Nov 2022 &nbsp;&nbsp;&#8226;&nbsp; 
-      Miden Systems | Data Analyst | October 2019 - May 2022
-    </p>
-  </div>
+  <h1></h1>
 </div>
+<br>
+<br>
 <br>
 <br>
 <br>
 <!-- Image gallery container -->
 <div id="image-gallery" class="image-container">
-  <img id="gallery-image" src="Images/skills.png" alt="Gallery Image" style="width: 56%; height: 450px; border-radius: 10px;">
+  <img id="gallery-image" src="Images/skills.png" alt="Gallery Image" style="width: 59%; height: 450px; border-radius: 10px;">
 </div>
 
 <br>
-
+<br>
+<br>
+<br>
 <!-- Box container -->
 <div class="box-container">
   <!-- Box 1 -->
@@ -650,15 +657,10 @@
       resources necessary for a better life.</p>
   </div>
 </div>
-
-
- 
-
 <script>
     const imageUrls = [
       'Images/Children.jpg',
       'Images/Children4.jpg',
-      
     ];
   
     let currentIndex = 0;
@@ -701,6 +703,11 @@
     }
   }
 </script>
+<br>
+<br>
+<br>
+<br>
+<br>
 <!-- Footer -->
 <footer>
   
