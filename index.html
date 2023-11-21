@@ -301,22 +301,23 @@ body{ font-size: 16px;
 
     .box {
       width: 700px;
-      background-color: #f0f0f0;
+      background-color: #5d0202;
       padding: 20px;
-      border: 1px solid rgb(40, 87, 168);
+      border: 1px solid #0c0f3a;
       border-radius: 10px;
       /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
       margin-bottom: 20px;
       align-content: center;
       text-align: center;
       font-weight: bold;
+      color: white;
 
     }
 
     .box-header {
-      background-color: rgb(40, 87, 168);
+      background-color: white;
       /* Blue background for the header */
-      color: white;
+      color: #800000;
       padding: 10px;
       font-weight: bolder;
       border-top-left-radius: 10px;
@@ -459,6 +460,9 @@ body{ font-size: 16px;
       /* Set your desired font size for the title */
       margin-bottom: 0px;
       margin-top: 10px;
+      border-bottom: 5px solid #800000;
+      padding-bottom: 5px;
+    
     }
 
     .subtitles {
@@ -483,6 +487,19 @@ body{ font-size: 16px;
       border-radius: 10px;
       /* overflow: hidden; Hides any overflowed content */
     }
+
+    .banner {
+      background-color: #0c0f3a;
+      border-top: 5px solid #800000;
+      padding-bottom: 2px;
+      height: 45px;
+      
+    }
+
+    .red-seperator {
+      color: #800000;
+    }
+
   </style>
 </head>
 
@@ -509,7 +526,7 @@ body{ font-size: 16px;
             <div class="dropdown-content">
               <ul>
                 <li><a href="awards.html">History</a></li>
-                <li><a href="Member.html">Research</a></li>
+                <li><a href="research.html">Research</a></li>
               </ul>
             </div>
           </div>
@@ -622,30 +639,27 @@ body{ font-size: 16px;
   </div>
 
   <br>
-  <!-- Image gallery container -->
-  <div id="image-gallery" class="image-container">
-    <img id="gallery-image" src="Images/Children.jpg" alt="Gallery Image"
-      style="width: 70%; height: 350px; border-radius: 10px;">
-  </div>
-  <br>
-  <br>
+ 
   <!-- Overall title -->
   <div class="main-title">
     <h1>PROFESSIONAL EXPERIENCE</h1>
     <div class="subtitle-container">
-      <p style="font-family: sans-serif; color: #0c0f3a; font-weight: 600; font-size: 15px; ">Centene Corporations | Dec
-        2023 - Present &nbsp;&nbsp;&#8226;&nbsp;
-        United HealthGroup | Nov 2022 - Aug 2023 &nbsp;&nbsp;&#8226;&nbsp;
-        St. Agnes HealthCare Professionals | July 2022 - Nov 2022 &nbsp;&nbsp;&#8226;&nbsp;
+      <p style="font-family: sans-serif; color: #0c0f3a; font-weight: 600; font-size: 15px; height: 25px;"><span class= "red-seperator">&#8226</span>Centene Corporations | Dec
+        2023 - Present &nbsp;&nbsp;&nbsp;<span class= "red-seperator">&#8226</span>
+        United HealthGroup | Nov 2022 - Aug 2023 &nbsp;&nbsp;&nbsp;<span class= "red-seperator">&#8226</span>
+        St. Agnes HealthCare Professionals | July 2022 - Nov 2022 &nbsp;&nbsp;&nbsp;<span class= "red-seperator">&#8226</span>
         Miden Systems | Oct 2019 - May 2022
       </p>
     </div>
   </div>
 
-  <br>
-  <div class="plain-pane">
 
-  </div>
+ <!-- Image gallery container -->
+ <div id="image-gallery" class="image-container">
+  <img id="gallery-image" src="Images/Children.jpg" alt="Gallery Image"
+    style="width: 50%; height: 340px; border-radius: 30px;">
+</div>
+<br>
 
   <!-- Content -->
   <div class="content blue">
@@ -748,11 +762,11 @@ body{ font-size: 16px;
     </ul>
   </div>
   <br>
-  <div class="main-title">
-    <h1></h1>
-  </div>
-  <br>
-  <br>
+ 
+  <div class="banner">
+    <h1 style="color: #0c0f3a;;">.</h1>
+  </div> 
+
   <br>
   <br>
   <br>
@@ -769,27 +783,33 @@ body{ font-size: 16px;
   <div class="box-container">
     <!-- Box 1 -->
     <div class="box">
-      <div class="box-header">ABOUT</div>
-      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px; ">Established in 2014,
-        Robinson Foundation is a non-governmental organization dedicated to making a positive impact on the lives of the
-        less fortunate across the globe. From the outset, our mission has been to bring hope, support, and opportunities
-        to those in need, working towards creating a world where everyone has the chance to thrive.</p>
+      <div class="box-header">FAVORITE QUOTE</div>
+      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: white; font-weight:bold font-size:15px; ">"You don’t need 
+        to know how the technology of a microwave works to use it - it is simply a tool. We’re now entering the 
+        same phase with AI, thanks to the huge influx of no-code, point‑and-click tools. AI will become a widely 
+        used utility by everyone, regardless of technical background. As a result, most of the AI applications in
+         the coming years will be built by people with little or no AI training.” - Vitaly Gordon, Vice President, 
+         Data Science and Engineering, Einstein, Salesforce</p>
     </div>
 
 
     <!-- Box 2 -->
     <div class="box">
-      <div class="box-header">MISSION</div>
-      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 17px;">At Robinson Foundation,
-        our primary mission is to extend a helping hand to the most vulnerable members of our global community. We focus
-        on delivering essential charity services to those facing adversity, ensuring that they receive the support and
-        resources necessary for a better life.</p>
+      <div class="box-header">HOBBIES</div>
+      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: white; font-weight:bold 17px;">My hobbies include listening
+         to podcasts and staying updated on business and political news. I also enjoy watching soccer matches, playing the 
+         sport myself, cooking traditional meals, and taking leisurely walks in the woods.</p>
     </div>
   </div>
   <script>
     const imageUrls = [
-      'Images/Children.jpg',
-      'Images/eght.jpg',
+      'Images/eght1.jpg',
+      'Images/eght3.jpg',
+      'Images/eght4.jpg',
+      'Images/eght5.jpg',
+      'Images/eght6.jpg',
+      
+
     ];
 
     let currentIndex = 0;
